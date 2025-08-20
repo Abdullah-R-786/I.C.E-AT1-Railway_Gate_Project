@@ -1,11 +1,11 @@
-## I.C.E-AT1-Railway_Gate_Project
+## I.C.E - AT1 - Automatic Railway Gate Crossing Logic Project
 
 
 This repository is for Intro to Computer Engineering - Assessment Task 1 - The Automated Railway Gates Crossing Project. In this repository will include folders for different sections of the assignment with their appropriate files within them for marking. 
 
 The relevent Word Document which has all the questions and written responses compiled together will also be uploaded directly to the respository, and will sit outside of the folders/not in any folder.
 
-   ## Project Overview
+## Project Overview
 This project is an automated railway gate crossing system designed to ensure the safety of oncoming passengers at the gate crossing intersection. It uses a multitude of sensors to determine the current event and proceed with the appropriate actions. The system is designed to operate continuously and autonomously using real-time logic and sensor feedback.
 
 ##   Features
