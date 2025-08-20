@@ -1,4 +1,4 @@
-**# I.C.E-AT1-Railway_Gate_Project**
+**## I.C.E-AT1-Railway_Gate_Project**
 This repository is for Intro to Computer Engineering - Assessment Task 1 - The Automated Railway Gates Crossing Project. In this repository will include folders for different sections of the assignment with their appropriate files within them for marking. 
 
 The relevent Word Document which has all the questions and written responses compiled together will also be uploaded directly to the respository, and will sit outside of the folders/not in any folder.
