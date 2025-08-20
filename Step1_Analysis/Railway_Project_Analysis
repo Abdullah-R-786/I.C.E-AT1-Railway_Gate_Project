@@ -1,1 +1,73 @@
+ ## Step 1: Exploring the Problem
+--------------------------------------------------------------------------------------------------------------------------------------------------
+1.	Restate the problem in your own words. 
+2.	Identify and describe all inputs and outputs of the system. 
+3.	Describe the context, constraints (technical, economic, social, environmental, legal), and stakeholders you can think about. 
+
+--------------------------------------------------------------------------------------------------------------------------------------------------
+Our transport infrastructure team have been approached to design a simple yet safe control logic system for the level crossing gates of a railway track, 
+that automatically lowers and raises the railway level crossing gates so that trains can pass without colliding with road vehicles.
+
+#The Client’s Requirements of the System Include:
+•	Ensuring that the gates are lowered prior to the arrival of the train upon its approach
+•	Level crossing gates must remain down while any vehicle is on the tracks and the gates can only be raised once it is safe, such that no train is approaching and the tracks are clear.
+
+#System Inputs/Outputs:
+
+Inputs (Sensors/Signals):
+
+  •	TrainApproachSensor 
+    -	HIGH when train is approaching. 
+  •	VehicleOnTracks 
+    -	HIGH when a vehicle is detected on the crossing.
+  •	TrainOnCrossing 
+    -	HIGH when the train is physically on the crossing.
+  •	TrainDepartureSensor 
+    -	HIGH when the train has left the crossing.
+
+Outputs:
+
+• Gates
+  -	Lowered when gates go down.
+  -	Raised when gates go up.
+  -	Held down, gates remain down.
+  -	Held up when gates do not lower because vehicle is present.
+
+•	Warning/Emergency Alarm
+  -	On when standard warning activated
+  -	Sound intensifies when vehicles on present on track
+  -	Off when standard warning deactivated
+
+•	Warning/Emergency Lights
+  -	On when standard warning activated
+  -	Light intensifies when vehicles on present on track
+  -	Off when standard warning deactivated
+
+
+#Context, Constraints and Stakeholders:
+
+•	Technical Requirements:
+The system should be designed for implementation using basic Boolean logic in combination with timers. 
+It must incorporate reliable sensors and be engineered with fail-safe defaults — for instance,
+barriers should lower automatically in the event of a malfunction or uncertain status. 
+Power redundancy and backup systems must also be taken into account to ensure uninterrupted operation.
+
+•	Economic Considerations:
+Affordability is essential; the use of moderately priced hardware is preferred.
+Standard, robust sensors and actuators should be prioritised over costly, custom-built alternatives.
+
+•	Social Implications:
+Public safety must be safeguarded at all times.
+The system should also minimise disruption to road users by preventing unnecessary delays at crossings.
+
+•	Environmental Conditions:
+All components should be weather-resistant, capable of withstanding rain, heat, and cold. Energy efficiency should be incorporated where practicable to reduce power consumption.
+
+•	Legal and Regulatory Compliance:
+The system must comply with Australian rail crossing safety standards and any applicable local or state regulations. 
+This includes maintaining operational records and ensuring that manual overrides are only accessible to authorised personnel.
+
+•	Stakeholder Groups:
+Relevant stakeholders include drivers, rail operators, infrastructure owners, maintenance crews, local councils, emergency services, and the general public.
+
 
