@@ -1,4 +1,4 @@
-## I.C.E - AT1 - Automatic Railway Gate Crossing Logic Project
+## I.C.E - AT1 - Automatic Railway Gate Logic Project
 
 
 This repository is for Intro to Computer Engineering - Assessment Task 1 - The Automated Railway Gates Crossing Project. In this repository will include folders for different sections of the assignment with their appropriate files within them for marking. 
