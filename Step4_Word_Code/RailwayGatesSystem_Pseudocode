@@ -1,0 +1,41 @@
+#Automatic Railway Gates Crossing System Pseudocode:
+
+START
+LOOP:
+// Step 1: Detect Train Approaching
+IF TrainApproachSensor = TRUE
+THEN
+ActivateWarningAlarms()
+ActivateWarningLights()
+
+// Step 2: Check for vehicles
+IF VehicleOnTracks = TRUE 
+THEN
+HoldGatesUp()
+Repeat check until VehicleOnTracks = FALSE
+LowerGates()
+ELSE
+LowerGates()
+
+// Step 3: During Train Crossing
+IF TrainOnCrossing = TRUE THEN
+KeepGatesDown()
+
+// Extra safety: if VehicleOnTracks = TRUE while train is crossing
+// (vehicle stuck inside), keep alarms active to warn vehicle
+IF VehicleOnTracks = TRUE THEN
+IntensifyWarnings()
+// Step 4: After Train Departure
+IF TrainDepartureSensor = TRUE 
+THEN
+Wait SafetyDelay(5 seconds)
+
+// Final check before raising gates
+IF (VehicleOnTracks = FALSE) AND (TrainApproachSensor = FALSE)
+THEN
+RaiseGates()
+DeactivateWarnings()
+ELSE
+KeepGatesDown()
+
+END/RESTART LOOP
